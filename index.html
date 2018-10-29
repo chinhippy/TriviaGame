@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>World Capitals</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="welcome">
+        <h1>World Capitals</h1>
+        <p>Press <strong>"Start Game"</strong> to test your knowledge of our world's capitals!</p>
+        <p>Don't be discouraged. Most people are really bad at this. </p>
+        <button type="button" class="start-game">Start Game</button>
+    </div>
+
+    <div class="trivia-game">
+        <div class="game-timer">
+            <h2>Time Remaining:<span id="timer"></span></h2>
+        </div>
+        <!-- Radio buttons let a user select only one of a limited number of choices -->
+        <ol class="questions">
+            <li class="q1">What is the Capital of Ethiopia?</li>
+            <ol>
+                <li><input type="radio" name="q1" value="correct">Addis Ababa</li>
+                <li><input type="radio" name="q1" value="incorrect"></li>
+                <li><input type="radio" name="q1" value="incorrect"></li>
+                <li><input type="radio" name="q1" value="incorrect"></li>
+            </ol>
+            <hr>
+            <li class="q2">What is the Capital of Uruguay?</li>
+            <ol>
+                <li><input type="radio" name="q2" value="incorrect"></li>
+                <li><input type="radio" name="q2" value="incorrect"></li>
+                <li><input type="radio" name="q2" value="incorrect"></li>
+                <li><input type="radio" name="q2" value="correct">Montevideo</li>
+            </ol>
+            <hr>
+            <li class="q3">What is the Capital of Thailand?</li>
+            <ol>
+                <li><input type="radio" name="q3" value="incorrect"></li>
+                <li><input type="radio" name="q3" value="correct">Bangkok</li>
+                <li><input type="radio" name="q3" value="incorrect"></li>
+                <li><input type="radio" name="q3" value="incorrect"></li>
+            </ol>
+            <hr>
+            <li class="q4">What is the Capital of Norway?</li>
+            <ol>
+                <li><input type="radio" name="q4" value="incorrect"></li>
+                <li><input type="radio" name="q4" value="incorrect"></li>
+                <li><input type="radio" name="q4" value="correct">Oslo</li>
+                <li><input type="radio" name="q4" value="incorrect"></li>
+            </ol>
+            <hr>
+            <li class="q5">What is the Capital of Portugal?</li>
+            <ol>
+                <li><input type="radio" name="q5" value="incorrect"></li>
+                <li><input type="radio" name="q5" value="incorrect"></li>
+                <li><input type="radio" name="q5" value="correct">Lisbon</li>
+                <li><input type="radio" name="q5" value="incorrect"></li>
+            </ol>
+            <hr>
+            <li class="q6">What is the Capital of Kenya?</li>
+            <ol>
+                <li><input type="radio" name="q6" value="correct">Nairobi</li>
+                <li><input type="radio" name="q6" value="incorrect"></li>
+                <li><input type="radio" name="q6" value="incorrect"></li>
+                <li><input type="radio" name="q6" value="incorrect"></li>
+            </ol>
+            <hr>
+            <li class="q7">What is the Capital of Scotland?</li>
+            <ol>
+                <li><input type="radio" name="q7" value="incorrect"></li>
+                <li><input type="radio" name="q7" value="correct">Edinburgh</li>
+                <li><input type="radio" name="q7" value="incorrect"></li>
+                <li><input type="radio" name="q7" value="incorrect">Glasgow</li>
+            </ol>
+            <hr>
+            <li class="q8">What is the Capital of Hungary?</li>
+            <ol>
+                <li><input type="radio" name="q8" value="correct">Budapest</li>
+                <li><input type="radio" name="q8" value="incorrect"></li>
+                <li><input type="radio" name="q8" value="incorrect"></li>
+                <li><input type="radio" name="q8" value="incorrect"></li>
+            </ol>
+            <hr>
+            <li class="q9">What is the Capital of Spain?</li>
+            <ol>
+                <li><input type="radio" name="q9" value="correct">Madrid</li>
+                <li><input type="radio" name="q9" value="incorrect"></li>
+                <li><input type="radio" name="q9" value="incorrect"></li>
+                <li><input type="radio" name="q9" value="incorrect"></li>
+            </ol>
+            <hr>
+            <li class="q10">What is the Capital of Canada?</li>
+            <ol>
+                <li><input type="radio" name="q10" value="incorrect"></li>
+                <li><input type="radio" name="q10" value="incorrect"></li>
+                <li><input type="radio" name="q10" value="correct">Ottawa</li>
+                <li><input type="radio" name="q10" value="incorrect"></li>
+            </ol>
+            <hr>
+        </ol>
+
+        <button type="button" class="submit">Submit</button>
+    </div>
+
+    <div class="score">
+        <h2>Overall Score</h2>
+        <p id="correct"></p>
+        <p id="incorrect"></p>
+        <hr>
+
+        <button type="button" class="re-play">Play Again?</button>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
