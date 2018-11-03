@@ -35,7 +35,7 @@ body {
   p {
     font-size: 1.5em;
     color: rgb(185, 157, 157);
-    margin-bottom: 0%;
+    margin-bottom: 3%;
   }
   
   strong {
@@ -47,9 +47,9 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 2em;
-    background-color: white;
+    background: transparent; 
     color: green;
-    border-radius: 10%;
+    
   }
   
   
@@ -63,7 +63,7 @@ body {
   h2 {
     font-weight: strong;
     font-size: 3em;
-    color: blue;
+    color: rgb(73, 73, 121);
     margin-top: 4%;
   }
   

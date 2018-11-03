@@ -9,6 +9,7 @@ function run() {
   intervalID = setInterval(decrement, 1000);
 }
 // FUNCTIONS - HAD A HARD TIME WITH THIS AND NEEDED TO CROSS REFERENCE OUR ACTIVITIES AND PLENTY OF STACK OVERFLOWS
+// Timer countdown
 function decrement() {
   timer--;
   $("#timer").html(" " + timer + " seconds");
@@ -33,9 +34,10 @@ function checkAnswers() {
       correct++;
       incorrect--;
     } 
-   
-    $("#correct").text("You answered " + correct + " questions correctly");
-    $("#incorrect").text("You answered " + incorrect + " questions incorrectly");
+  // not displaying correctly - correct ALWAYS incrementing and incorrect ALWAYS decrementing
+  // modified code to reflect template literals
+    $("#correct").text(`You answered  ${correct} questions correctly`);
+    $("#incorrect").text(`You answered ${incorrect} questions incorrectly`);
   }
 }
 
@@ -62,7 +64,10 @@ $(document).ready(function() {
 
   $(".replay").on("click", function() {
     // console.log("replay button has been clicked");
-
+    // $(".welcome").hide();
+    // $(".trivia-game").show();
+    // run();
+    // decrement();
     $(".welcome").show();
     $(".score").hide();
     run();
