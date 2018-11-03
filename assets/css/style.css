@@ -1,0 +1,97 @@
+body {
+    background-image: url("../images/carbon_fibre.png");
+    /* background-repeat: no-repeat; */
+    /* Experimented with several background options with a no-repeat but resolution was compromised */
+    /* background-repeat:  */
+    /* background-size: cover; */
+  }
+
+  .jumbotron {
+    padding-top: 5px;
+    padding-bottom: 1em;
+  }
+  /* ADDED JUMBOTRON, DIV CLASS STYLING NOT NEEDED */
+  .welcome {
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: strong;
+    font-size: 5em;
+    color: rgb(33, 81, 104);
+    margin-top: 4%;
+    font-family: 'Black Ops One', cursive;
+  }
+
+  .start-game {
+    color: #0099CC; 
+    border-radius: 6px; 
+    border: 2px solid #0099CC;
+    background: transparent; 
+      
+  }
+  
+  p {
+    font-size: 1.5em;
+    color: rgb(185, 157, 157);
+    margin-bottom: 0%;
+  }
+  
+  strong {
+    color:  rgb(33, 81, 104);
+  }
+  
+  /* ALL BUTTONS ON EACH PAGE OF GAME */
+  button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 2em;
+    background-color: white;
+    color: green;
+    border-radius: 10%;
+  }
+  
+  
+  /* SECOND PAGE OF GAME STYLE */
+  
+  .trivia-game {
+    width: 100%;
+    text-align: center;
+  }
+  
+  h2 {
+    font-weight: strong;
+    font-size: 3em;
+    color: blue;
+    margin-top: 4%;
+  }
+  
+  .questions {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgb(192, 227, 238);
+    padding-right: 3%;
+  }
+  
+  .q1 {
+    margin-top: 2%;
+    padding-top: 3%;
+  }
+  
+  li {
+    list-style-type: none;
+    /* text-align: left: */
+  }
+  
+  input {
+    margin: .4rem;
+  }
+  
+  /* THIRD PAGE OF GAME STYLE */
+  
+  .score {
+    width: 100%;
+    text-align: center;
+  }

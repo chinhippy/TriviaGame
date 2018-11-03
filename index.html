@@ -11,17 +11,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+
 
 </head>
 
 <body>
 
-    <div class="welcome">
+        <div class="jumbotron">
+             <!-- <div><img src="assets/images/compass.jpg" class="rounded float-left" height="200px" alt="compass"></div> -->
+             <!-- additional images didnt feel right....liked a simple styling format better -->
+             <div class="container text-center">
+                <h1>World Capitals</h1>
+                <p>Press <strong>"Start Game"</strong> to test your knowledge of our world's capitals!</p>
+                <!-- <hr class="my-4"> -->
+                <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+                <a class="btn btn-primary btn-lg start-game" href="#" role="button">Start Game</a>
+            </div>
+        </div>
+   
+   
+    <!-- <div class="welcome">
         <h1>World Capitals</h1>
         <p>Press <strong>"Start Game"</strong> to test your knowledge of our world's capitals!</p>
         <p>Don't be discouraged. Most people are really bad at this. </p>
         <button type="button" class="start-game">Start Game</button>
-    </div>
+    </div> -->
 
     <div class="trivia-game">
         <div class="game-timer">
@@ -32,81 +47,81 @@
             <li class="q1">What is the Capital of Ethiopia?</li>
             <ol>
                 <li><input type="radio" name="q1" value="correct">Addis Ababa</li>
-                <li><input type="radio" name="q1" value="incorrect"></li>
-                <li><input type="radio" name="q1" value="incorrect"></li>
-                <li><input type="radio" name="q1" value="incorrect"></li>
+                <li><input type="radio" name="q1" value="incorrect">Cairo</li>
+                <li><input type="radio" name="q1" value="incorrect">Demera</li>
+                <li><input type="radio" name="q1" value="incorrect">Nairobi</li>
             </ol>
             <hr>
             <li class="q2">What is the Capital of Uruguay?</li>
             <ol>
-                <li><input type="radio" name="q2" value="incorrect"></li>
-                <li><input type="radio" name="q2" value="incorrect"></li>
-                <li><input type="radio" name="q2" value="incorrect"></li>
+                <li><input type="radio" name="q2" value="incorrect">La Paz</li>
+                <li><input type="radio" name="q2" value="incorrect">Quito</li>
+                <li><input type="radio" name="q2" value="incorrect">San Juan</li>
                 <li><input type="radio" name="q2" value="correct">Montevideo</li>
             </ol>
             <hr>
             <li class="q3">What is the Capital of Thailand?</li>
             <ol>
-                <li><input type="radio" name="q3" value="incorrect"></li>
+                <li><input type="radio" name="q3" value="incorrect">Phuket</li>
                 <li><input type="radio" name="q3" value="correct">Bangkok</li>
-                <li><input type="radio" name="q3" value="incorrect"></li>
-                <li><input type="radio" name="q3" value="incorrect"></li>
+                <li><input type="radio" name="q3" value="incorrect">Sri Lanka</li>
+                <li><input type="radio" name="q3" value="incorrect">Peking</li>
             </ol>
             <hr>
             <li class="q4">What is the Capital of Norway?</li>
             <ol>
-                <li><input type="radio" name="q4" value="incorrect"></li>
-                <li><input type="radio" name="q4" value="incorrect"></li>
+                <li><input type="radio" name="q4" value="incorrect">Copenhagen</li>
+                <li><input type="radio" name="q4" value="incorrect">Helsinki</li>
                 <li><input type="radio" name="q4" value="correct">Oslo</li>
-                <li><input type="radio" name="q4" value="incorrect"></li>
+                <li><input type="radio" name="q4" value="incorrect">Stockholm</li>
             </ol>
             <hr>
             <li class="q5">What is the Capital of Portugal?</li>
             <ol>
-                <li><input type="radio" name="q5" value="incorrect"></li>
-                <li><input type="radio" name="q5" value="incorrect"></li>
+                <li><input type="radio" name="q5" value="incorrect">Portugal City</li>
+                <li><input type="radio" name="q5" value="incorrect">Sao Paulo</li>
                 <li><input type="radio" name="q5" value="correct">Lisbon</li>
-                <li><input type="radio" name="q5" value="incorrect"></li>
+                <li><input type="radio" name="q5" value="incorrect">Santiago</li>
             </ol>
             <hr>
             <li class="q6">What is the Capital of Kenya?</li>
             <ol>
                 <li><input type="radio" name="q6" value="correct">Nairobi</li>
-                <li><input type="radio" name="q6" value="incorrect"></li>
-                <li><input type="radio" name="q6" value="incorrect"></li>
-                <li><input type="radio" name="q6" value="incorrect"></li>
+                <li><input type="radio" name="q6" value="incorrect">Somalia</li>
+                <li><input type="radio" name="q6" value="incorrect">Algiers</li>
+                <li><input type="radio" name="q6" value="incorrect">Capetown</li>
             </ol>
             <hr>
             <li class="q7">What is the Capital of Scotland?</li>
             <ol>
-                <li><input type="radio" name="q7" value="incorrect"></li>
+                <li><input type="radio" name="q7" value="incorrect">Wales</li>
                 <li><input type="radio" name="q7" value="correct">Edinburgh</li>
-                <li><input type="radio" name="q7" value="incorrect"></li>
+                <li><input type="radio" name="q7" value="incorrect">Manchester</li>
                 <li><input type="radio" name="q7" value="incorrect">Glasgow</li>
             </ol>
             <hr>
             <li class="q8">What is the Capital of Hungary?</li>
             <ol>
                 <li><input type="radio" name="q8" value="correct">Budapest</li>
-                <li><input type="radio" name="q8" value="incorrect"></li>
-                <li><input type="radio" name="q8" value="incorrect"></li>
-                <li><input type="radio" name="q8" value="incorrect"></li>
+                <li><input type="radio" name="q8" value="incorrect">Satiated</li>
+                <li><input type="radio" name="q8" value="incorrect">Bucharest</li>
+                <li><input type="radio" name="q8" value="incorrect">Romania</li>
             </ol>
             <hr>
             <li class="q9">What is the Capital of Spain?</li>
             <ol>
                 <li><input type="radio" name="q9" value="correct">Madrid</li>
-                <li><input type="radio" name="q9" value="incorrect"></li>
-                <li><input type="radio" name="q9" value="incorrect"></li>
-                <li><input type="radio" name="q9" value="incorrect"></li>
+                <li><input type="radio" name="q9" value="incorrect">Lima</li>
+                <li><input type="radio" name="q9" value="incorrect">Barcelona</li>
+                <li><input type="radio" name="q9" value="incorrect">Odessa</li>
             </ol>
             <hr>
             <li class="q10">What is the Capital of Canada?</li>
             <ol>
-                <li><input type="radio" name="q10" value="incorrect"></li>
-                <li><input type="radio" name="q10" value="incorrect"></li>
+                <li><input type="radio" name="q10" value="incorrect">Toronto</li>
+                <li><input type="radio" name="q10" value="incorrect">Montreal</li>
                 <li><input type="radio" name="q10" value="correct">Ottawa</li>
-                <li><input type="radio" name="q10" value="incorrect"></li>
+                <li><input type="radio" name="q10" value="incorrect">Ontario</li>
             </ol>
             <hr>
         </ol>
@@ -120,7 +135,7 @@
         <p id="incorrect"></p>
         <hr>
 
-        <button type="button" class="re-play">Play Again?</button>
+        <button type="button" class="replay">Play Again?</button>
     </div>
 
 
