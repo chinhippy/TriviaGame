@@ -30,9 +30,17 @@ function stop() {
 
 function checkAnswers() {
   for (var i = 0; i < $("input:checked").length; i++) {
-    if ($("input:checked").val("correct")) {
+    if ($("input:checked").val() === "correct") {
       correct++;
       incorrect--;
+
+      // Took 2 days to find the error (line 39)
+
+// function checkAnswers() {
+//   for (var i = 0; i < $("input:checked").length; i++) {
+//     if ($("input:checked").val("correct")) {
+//       correct++;
+//       incorrect--;
     } 
   // not displaying correctly - correct ALWAYS incrementing and incorrect ALWAYS decrementing
   // modified code to reflect template literals
@@ -64,13 +72,10 @@ $(document).ready(function() {
 
   $(".replay").on("click", function() {
     // console.log("replay button has been clicked");
-    // $(".welcome").hide();
-    // $(".trivia-game").show();
-    // run();
-    // decrement();
-    $(".welcome").show();
+    // $(".welcome").show();
     $(".score").hide();
-    run();
+    location.reload();
+     run();
   })
 
 })
